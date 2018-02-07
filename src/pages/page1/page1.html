@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Page One</ion-title>
+  </ion-navbar >
+</ion-header>
+
+<ion-content padding>
+ 
+
+
+<ion-list>
+
+  <ion-item>
+    <ion-label fixed>Username</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>tel</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<button ion-button>Submit</button>
+
+
+
+<ion-item>
+  <ion-icon name="logo-twitter" item-start></ion-icon>
+  Followers
+  <ion-badge item-end>260k</ion-badge>
+</ion-item>
+
+<!--  comment --> 
+
+<ion-item>
+  <ion-label>Start Time</ion-label>
+  <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+</ion-item>
+
+
+<ion-item>
+  <ion-label> Sam</ion-label>
+  <ion-toggle  checked="true"></ion-toggle>
+</ion-item>
+
+
+<ion-slides pager>
+
+  <ion-slide style="background-color: white">
+    <h2>Slide 1</h2>
+  </ion-slide>
+
+  <ion-slide style="background-color: white">
+    <h2>Slide 2</h2>
+  </ion-slide>
+
+  <ion-slide style="background-color: white">
+    <h2>Slide 3</h2>
+  </ion-slide>
+
+</ion-slides>
+
+
+</ion-content>
